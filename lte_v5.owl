@@ -1,0 +1,2269 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/anton/ontologies/2023/0/lte#"
+     xml:base="http://www.semanticweb.org/anton/ontologies/2023/0/lte"
+     xmlns:lte="http://www.semanticweb.org/anton/ontologies/2023/0/lte#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#functional_tag -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#functional_tag">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#rds_tag"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#location_aspect -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#location_aspect">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#rds_tag"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#product_tag -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#product_tag">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#rds_tag"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#rds_description -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#rds_description"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#rds_id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#rds_id"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#rds_tag -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#rds_tag"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#type_tag -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#type_tag">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#rds_tag"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#appliesPricingPolicies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#appliesPricingPolicies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#authenticate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#authenticate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#bearerManage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#bearerManage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#connectionLink -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#connectionLink">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MME"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#eNodeB"/>
+        <rdfs:comment>Скорее всего в ближайщем будущем придется отказаться от такого рода отношений</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#connectionProvidedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#connectionProvidedWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Gx"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IP"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1-AP"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1-U"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S11"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S6a"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UU"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#X2"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S5/S8"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#E-UTRAN"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IPNetwork"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#HSS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MME"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PCRF"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PGW"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SGW"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SubscriberIdentity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#eNodeB"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#controlWorkOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#controlWorkOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isControlledBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MME"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#HSS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SGW"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#down -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#down">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#linkDirection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#enableHandoverFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#enableHandoverFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#establishConnectionWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#establishConnectionWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#establishQoSOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#establishQoSOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#giveIPFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#giveIPFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#hasOwner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#hasOwner">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#owns"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAnkerFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAnkerFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#isControlledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isControlledBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#linkDirection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#linkDirection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#manageConnectionFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#manageConnectionFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#owns -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#owns">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#provideIdleModeFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#provideIdleModeFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#provideInfoAbout -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#provideInfoAbout">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#provideTrafficOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#provideTrafficOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#service -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#service">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#up -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#up">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#linkDirection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#use -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#UE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#User"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#tag -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#tag">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTEComponents"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#BCCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#BCCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LogicalChannel"/>
+        <product_tag>BAA</product_tag>
+        <rds_description>BCCH</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#BCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#BCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#TransportChannel"/>
+        <product_tag>BDA</product_tag>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#CCCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CCCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LogicalChannel"/>
+        <product_tag>BAB</product_tag>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#Channel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Channel">
+        <product_tag>B</product_tag>
+        <rds_description>Channel</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#ChannelType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ChannelType">
+        <rds_description>Channel type</rds_description>
+        <type_tag>K</type_tag>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#Connection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Connection">
+        <functional_tag>C</functional_tag>
+        <rds_description>Connection</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#ConnectionRelation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ConnectionRelation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Connection"/>
+        <functional_tag>CA</functional_tag>
+        <rds_description>If connection between entities is present</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#ControlLayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ControlLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#InterfacesLayer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#L1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MAC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#NAS"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PDCP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#RRC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1-AP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SCTP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <location_aspect>ZAA</location_aspect>
+        <rds_description>Control layer</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#DCCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#DCCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LogicalChannel"/>
+        <product_tag>BAD</product_tag>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#DL-SCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#DL-SCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#TransportChannel"/>
+        <product_tag>BDB</product_tag>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#DTCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#DTCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LogicalChannel"/>
+        <product_tag>BAE</product_tag>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#Data_storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Data_storage">
+        <product_tag>D</product_tag>
+        <rds_description>Data storage</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#Database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Database">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Data_storage"/>
+        <product_tag>DA</product_tag>
+        <rds_description>Database</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#Database_system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Database_system">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#System_for_data_storage"/>
+        <functional_tag>HA</functional_tag>
+        <rds_description>Database system</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#Downlink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Downlink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ChannelType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#BCCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#BCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CCCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#DCCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#DL-SCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#DTCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MCCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MTCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PBCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PCCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PDCCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PDSCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PHICH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PMCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rds_description>Downlink</rds_description>
+        <type_tag>KB</type_tag>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#E-UTRAN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#E-UTRAN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTEComponents"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#eNodeB"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#service"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <location_aspect>XAA</location_aspect>
+        <rds_description>E-UTRAN</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTEComponents"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#GateWay"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#HSS"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MME"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PCRF"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#service"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#tag"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <location_aspect>XAB</location_aspect>
+        <rds_description>EPC</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#ESIM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ESIM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SIM-card"/>
+        <product_tag>SAA</product_tag>
+        <rds_description>ESIM</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#GTP-U -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#GTP-U">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#GateWay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#GateWay">
+        <product_tag>A</product_tag>
+        <rds_description>Gateway</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#Gx -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Gx">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IPNetwork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#HSS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#HSS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Database"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#provideInfoAbout"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#User"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <product_tag>HSS</product_tag>
+        <rds_description>Home Subscriber Server</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#IP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IPNetwork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#IPNetwork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IPNetwork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTEComponents"/>
+        <location_aspect>XAD</location_aspect>
+        <rds_description>IP network</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#InterfacesLayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#InterfacesLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SystemLayer"/>
+        <location_aspect>ZA</location_aspect>
+        <rds_description>Interface layer</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#L1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#L1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#L2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#L2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTEComponents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTEComponents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#WirelessBroadbandCommunicationSystemsComponents"/>
+        <location_aspect>XA</location_aspect>
+        <rds_description>LTE</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#LogicalChannel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LogicalChannel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Channel"/>
+        <product_tag>BA</product_tag>
+        <rds_description>Logical Channel</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#MAC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MAC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#MCCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MCCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LogicalChannel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#MCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#TransportChannel"/>
+        <product_tag>BDC</product_tag>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#MME -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MME">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#authenticate"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#bearerManage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTEComponents"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#controlWorkOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#enableHandoverFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#eNodeB"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#establishConnectionWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PGW"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#establishConnectionWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SGW"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#manageConnectionFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#L1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#L2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#NAS"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1-AP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SCTP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#MTCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MTCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LogicalChannel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#NAS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#NAS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#Network_GateWay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Network_GateWay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#GateWay"/>
+        <product_tag>AB</product_tag>
+        <rds_description>Network gateway</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#PBCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PBCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PhysicalChannel"/>
+        <product_tag>BCA</product_tag>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#PCCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PCCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LogicalChannel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#PCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#TransportChannel"/>
+        <product_tag>BDD</product_tag>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#PCRF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PCRF">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#appliesPricingPolicies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PGW"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#PDCCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PDCCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PhysicalChannel"/>
+        <product_tag>BCB</product_tag>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#PDCP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PDCP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#PDSCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PDSCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PhysicalChannel"/>
+        <product_tag>BCD</product_tag>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#PGW -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PGW">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Network_GateWay"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#giveIPFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#provideTrafficOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SGW"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#GTP-U"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#L1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#L2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UDP/IP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <product_tag>ABC</product_tag>
+        <rds_description>Packet GateWay</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#PHICH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PHICH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PhysicalChannel"/>
+        <product_tag>BCE</product_tag>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#PMCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PMCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PhysicalChannel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#PRACH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PRACH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PhysicalChannel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#PUCCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PUCCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PhysicalChannel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#PUSCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PUSCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PhysicalChannel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#PhysicalChannel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PhysicalChannel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Channel"/>
+        <product_tag>BC</product_tag>
+        <rds_description>Physical Channel</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#RACH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#RACH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#TransportChannel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#RLC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#RLC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#RRC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#RRC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#connectionLink"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MME"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#connectionLink"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#eNodeB"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1-AP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1-AP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#E-UTRAN"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1-U -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1-U">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#S11 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S11">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#S6a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S6a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#SCTP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SCTP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#SGW -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SGW">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Network_GateWay"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#establishQoSOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTEComponents"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAnkerFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#provideIdleModeFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#provideTrafficOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#eNodeB"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#GTP-U"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#L1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#L2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UDP/IP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <product_tag>ABD</product_tag>
+        <rds_description>Serving Gateway</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#SIM-card -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SIM-card">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SubscriberIdentity"/>
+        <product_tag>SA</product_tag>
+        <rds_description>SIM-card</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#Storage_for_subscribers_data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Storage_for_subscribers_data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Database_system"/>
+        <functional_tag>HAA</functional_tag>
+        <rds_description>Storage for subscribes data</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#SubscriberIdentity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SubscriberIdentity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#provideInfoAbout"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#User"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <product_tag>S</product_tag>
+        <rds_description>Subscriber identity</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#SystemLayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SystemLayer">
+        <location_aspect>Z</location_aspect>
+        <rds_description>System layers</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#System_for_data_storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#System_for_data_storage">
+        <functional_tag>H</functional_tag>
+        <rds_description>System for data storage</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#TransportChannel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#TransportChannel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Channel"/>
+        <product_tag>BD</product_tag>
+        <rds_description>Transport Channel</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#UE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTEComponents"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SubscriberIdentity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#UL-SCH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UL-SCH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#TransportChannel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#USIM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#USIM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SIM-card"/>
+        <product_tag>SAB</product_tag>
+        <rds_description>USIM</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#UU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#E-UTRAN"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UE"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#Uplink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Uplink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ChannelType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CCCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#DCCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#DTCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PRACH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PUCCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PUSCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#RACH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UL-SCH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rds_description>Uplink</rds_description>
+        <type_tag>KA</type_tag>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#User">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#owns"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#hasOwner"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#User"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UE"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Downlink"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#L1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MAC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#NAS"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PDCP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#RLC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#RRC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserLayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#InterfacesLayer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#L1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#L2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PDCP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#RLC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <location_aspect>ZAB</location_aspect>
+        <rds_description>User layer</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#WirelessBroadbandCommunicationSystemsComponents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#WirelessBroadbandCommunicationSystemsComponents">
+        <location_aspect>X</location_aspect>
+        <rds_description>Wireless Broadband Communication</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#X2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#X2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#E-UTRAN"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenENodeBandENodeB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenENodeBandENodeB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ConnectionRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#connectionProvidedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#X2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <functional_tag>CAA</functional_tag>
+        <rds_description>Connection between ENodeB and ENodeB</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenENodeBandMME -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenENodeBandMME">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ConnectionRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#connectionProvidedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1-AP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <functional_tag>CAB</functional_tag>
+        <rds_description>Connection between ENodeB and MME</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenENodeBandSGW -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenENodeBandSGW">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ConnectionRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#connectionProvidedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1-U"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenMMEandHSS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenMMEandHSS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ConnectionRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#connectionProvidedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S6a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenMMEandSGW -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenMMEandSGW">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ConnectionRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#connectionProvidedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S11"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenPCRFandIPNetwork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenPCRFandIPNetwork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ConnectionRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#connectionProvidedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Gx"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenPGWandIPNetwork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenPGWandIPNetwork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ConnectionRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#connectionProvidedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenSGWandPGW -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenSGWandPGW">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ConnectionRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#connectionProvidedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S5/S8"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <functional_tag>CAC</functional_tag>
+        <rds_description>Connection between SGW and PGW</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenUEandENodeB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenUEandENodeB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ConnectionRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#connectionProvidedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UU"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#down"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Downlink"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#up"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Uplink"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <functional_tag>CAD</functional_tag>
+        <rds_description>Connection between ENodeB and UE</rds_description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#eNodeB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#eNodeB">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#establishConnectionWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MME"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#E-UTRAN"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#provideTrafficOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#GTP-U"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#L1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#L2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MAC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#PDCP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#use"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SCTP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#S5/S8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S5/S8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#CommunicationInterface"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#isAPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#TCP/IP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#TCP/IP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#UDP/IP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UDP/IP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IP"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#Anton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Anton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#User"/>
+        <owns rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTEPhone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#Bob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Bob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#E-UTRAN1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#E-UTRAN1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#E-UTRAN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC"/>
+        <contains rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#HSS1"/>
+        <contains rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MME1"/>
+        <rds_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rds_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#ESIM1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ESIM1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#ESIM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#GaTeWaY3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#GaTeWaY3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#GateWay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#GateWay1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#GateWay1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#GateWay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#Gateway2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Gateway2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#GateWay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#HSS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#HSS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#HSS"/>
+        <isAPartOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC1"/>
+        <isControlledBy rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MME1"/>
+        <rds_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</rds_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#IP1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IP1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IPNetwork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#IntefaceLayer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#IntefaceLayer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#InterfacesLayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTE1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTE1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTEComponents"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTE2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTE2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTEComponents"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTEPhone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTEPhone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UserEquipment"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Anton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#MME1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MME1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MME"/>
+        <controlWorkOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#HSS1"/>
+        <isAPartOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#EPC1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#NetworkGateway1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#NetworkGateway1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Network_GateWay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#OWLNamedIndividual_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#OWLNamedIndividual_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#User"/>
+        <rds_tag xml:lang="ru">Alex</rds_tag>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#OWLNamedIndividual_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#OWLNamedIndividual_02">
+        <rds_id xml:lang="en">ann</rds_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1-AP-LINK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1-AP-LINK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1"/>
+        <establishConnectionWith rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#MME1"/>
+        <establishConnectionWith rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#eNodeB1"/>
+        <rdfs:comment>На момент версии 1.5 потенциально устаревший подход, оставлена на время</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#SGW1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SGW1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SGW"/>
+        <rds_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rds_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#SIM1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SIM1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SIM-card"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#SIdentity1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SIdentity1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SubscriberIdentity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#Some_Data_storage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Some_Data_storage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Data_storage"/>
+        <rds_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rds_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#Some_database -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Some_database">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#Database"/>
+        <rds_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rds_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#SystemLayers1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SystemLayers1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SystemLayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#UE1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UE1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#USIM1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#USIM1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#USIM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#WBC1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#WBC1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#WirelessBroadbandCommunicationSystemsComponents"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#eNodeB1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#eNodeB1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#eNodeB"/>
+        <provideTrafficOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#LTEPhone"/>
+        <tag>T1TS1TST3</tag>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#mme-enodeb-link1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#mme-enodeb-link1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#betweenENodeBandMME"/>
+        <connectionProvidedWith rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#s1-ap-1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#s1-ap-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#s1-ap-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#S1-AP"/>
+        <connectionProvidedWith rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#s1-ap-1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2023/0/lte#0002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#0002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anton/ontologies/2023/0/lte#SGW"/>
+        <rds_id xml:lang="en">sgw-t</rds_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2023/0/lte#UE">
+        <location_aspect>XAC</location_aspect>
+        <rds_description>UE</rds_description>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
