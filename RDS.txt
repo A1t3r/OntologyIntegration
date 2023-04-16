@@ -1,0 +1,61 @@
+Product aspect:
+A (Gateway)
+-AB (Network gateway)
+--ABC (Packet GateWay)
+--ABD (Serving Gateway)
+
+B (Channel)
+-BA (Logical Channel)
+--BAA (BCCH)
+--BAB (CCCH)
+--BAD (DCCH)
+--BAE (DTCH)
+-BC (Physical Channel)
+--BCA (PBCH)
+--BCB (PDCCH)
+--BCD (PDSCH)
+--BCE (PHICH)
+-BD (Transport Channel)
+--BDA (BCH)
+--BDB (DL-SCH)
+--BDC (MCH)
+--BDD (PCH)
+
+D (Data storage)
+-DA (Database)
+--HSS (Home Subscriber Server)
+
+S (Subscriber identity)
+-SA (SIM-card)
+--SAA (ESIM)
+--SAB (USIM)
+
+Functional aspect:
+H (System for data storage)
+=HA (Database system)
+==HAA (Storage for subscribes data)
+
+C (Connection)
+=CA (If connection between entities is present)
+==CAA (Connection between ENodeB and ENodeB)
+==CAB (Connection between ENodeB and MME)
+==CAD (Connection between ENodeB and UE)
+==CAC (Connection between SGW and PGW)
+
+Type aspect:
+K (Channel type)
+%KA (Uplink)
+%KB (Downlink)
+
+Location Aspect:
+Z (System layer)
++ZA (Interface layer)
+++ZAA (Control layer)
+++ZAB (User layer)
+
+X (Wireless Broadband Communication)
++XA (LTE)
+++XAA (E-UTRAN)
+++XAB (EPC)
+++XAC (UE)
+++XAD (IP network)
